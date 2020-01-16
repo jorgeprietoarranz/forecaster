@@ -38,7 +38,7 @@ A simple interactive example:
     mean = float(raw_input("Enter A: "))
     std = float(raw_input("Enter B: "))
 
-    # predict the mean and std of radius given mass measurements
+    # predict the mean and std of mass given radius measurements
     Mmedian, Mplus, Mminus = mr.Rstat2M(mean, std, unit='Earth', sample_size=1e3, grid_size=1e3)
     print ' '
     print 'Mass = ',Mmedian,'+',Mplus,'-',Mminus,' M_earth'
